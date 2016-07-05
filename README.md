@@ -4,6 +4,7 @@
 Uses Instagram api to get a user's recent media
 
 ## Code Example
+See instagramapi.html
 
 ## Motivation
 Sample code for using the Instagram api
@@ -12,6 +13,7 @@ Sample code for using the Instagram api
 1. Register your app:  https://www.instagram.com/developer/
 2. Register your client:  https://www.instagram.com/developer/clients/register/
 For redirect URI, specify http://localhost
+Once complete you will be given a CLIENT-ID and CLIENT-SECRET
 3. Get authorization. Type the following url in your browser.
 https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=http://localhost&response_type=code
 
