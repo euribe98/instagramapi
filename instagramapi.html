@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram Test</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<style>
+		div.image {
+			padding: 10px;
+			float:left;
+			margin-right:5px;
+		}
+		div.img-container {
+			overflow: hidden;
+			margin: 0 auto;
+ 			width: 100%;
+	
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>	
+		$.getScript("instagramapi.js",function(){
+			getUserRecentMedia("bellasjardin", 12);
+		});			
+	</script>
+	
+	<h2 style="text-align:center;color:darkblue">Instagram Test</h2>
+	<br>
+	<div class="img-container">
+	   <div class="img" id="instagram-images"></div>
+	</div>
+	
+	
+</body>
+</html>
