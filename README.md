@@ -10,20 +10,24 @@ See instagramapi.html
 Sample code for using the Instagram api
 
 ## Instructions
-instagramapi.js has 2 functions to retrieve user media<br>
-1. function getUserMediaNoAuth(user, count)<br> 
-   Does not require authorization and is undocumented. May not be officially supported. <br>
-2. function getUserRecentMedia(user, count)  <br>
-  Supported api that requires authorization.  <br>
+<strong>instagramapi.js</strong> has 2 functions to retrieve user media, one that requires authorization and one that does not.<br>
+1. <strong>function getUserMediaNoAuth(user, count)</strong><br> 
+   user: instagram user<br>
+   count: number of media to return up to a max of 20<br>
+2. <strong>function getUserRecentMedia(user, count)</strong><br>
+   user: instagram user<br>
+   count: number of media to return <br>
  <br>
-3. instagramapi.php has 2 functions and serves as a proxy for the above 2 api's <br>
-a. function getUserMediaNoAuth ($username)  <br>
-   endpoint: https://www.instagram.com/username/media/ <br>
-b. function getUserRecentMedia($username, $count) <br>
-  endpoint: https://api.instagram.com/v1/users/USER-ID/media/recent/?access_token=ACCESS-TOKEN <br>
-  Update accesstoken.php with your ACCESS-TOKEN. See readme.txt for steps to retrieve your access-token. <br>
+3. <strong>instagramapi.php</strong> has 2 functions and serves as a proxy for the above 2 api's <br>
+a. <strong>function getUserMediaNoAuth ($username)</strong><br>
+   instagram endpoint: <i>https://www.instagram.com/username/media/</i><br>
+   Does not require authorization and is undocumented, so may not be officially supported. <br>
+b. <strong>function getUserRecentMedia($username, $count)</strong><br>
+   instagram endpoint: <i>https://api.instagram.com/v1/users/USER-ID/media/recent/?access_token=ACCESS-TOKEN</i><br>
+   Supported api that requires authorization.  <br>
+   Update accesstoken.php, replacing ACCESS-TOKEN with your value. See <strong>readme.txt</strong> for steps to retrieve your access-token. <br>
  <br>
-4. instagramapi.html has usage examples for these functions. <br>
+4. <strong>instagramapi.html</strong> has usage examples for these functions. <br>
    
 
 
