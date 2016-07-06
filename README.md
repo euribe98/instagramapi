@@ -10,20 +10,20 @@ See instagramapi.html
 Sample code for using the Instagram api
 
 ## Instructions
-instagramapi.js has 2 functions to retrieve user media
-1. function getUserMediaNoAuth(user, count) 
-   Does not require authorization but not documented. May not be officially supported. 
-2. function getUserRecentMedia(user, count) 
-  Supported api that requires authorization.
-
-3. instagramapi.php has 2 functions and servers as a proxy for the above 2 calls
-a. function getUserMediaNoAuth ($username) 
-   endpoint: https://www.instagram.com/username/media/
-b. function getUserRecentMedia($username, $count)
-  endpoint: https://api.instagram.com/v1/users/USER-ID/media/recent/?access_token=ACCESS-TOKEN
-  Update accesstoken.php with your ACCESS-TOKEN. See readme.txt for details.
-
-4. instagramapi.html has usage examples for functions.
+instagramapi.js has 2 functions to retrieve user media<br>
+1. function getUserMediaNoAuth(user, count)<br> 
+   Does not require authorization but not documented. May not be officially supported. <br>
+2. function getUserRecentMedia(user, count)  <br>
+  Supported api that requires authorization.  <br>
+ <br>
+3. instagramapi.php has 2 functions and servers as a proxy for the above 2 calls <br>
+a. function getUserMediaNoAuth ($username)  <br>
+   endpoint: https://www.instagram.com/username/media/ <br>
+b. function getUserRecentMedia($username, $count) <br>
+  endpoint: https://api.instagram.com/v1/users/USER-ID/media/recent/?access_token=ACCESS-TOKEN <br>
+  Update accesstoken.php with your ACCESS-TOKEN. See readme.txt for details. <br>
+ <br>
+4. instagramapi.html has usage examples for functions. <br>
    
 
 
