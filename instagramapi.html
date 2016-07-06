@@ -21,9 +21,18 @@
 
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script>	
+	<!-- requires authorization -->
+	<!--<script>	
 		$.getScript("instagramapi.js",function(){
-			getUserRecentMedia("bellasjardin", 12);
+			getUserRecentMedia("bellasjardin", 12);  
+		});			
+	</script>-->
+	
+	
+	 <!-- no authorization required -->
+	 <script>	
+		$.getScript("instagramapi.js",function(){
+			getUserMediaNoAuth("bellasjardin", 12); 
 		});			
 	</script>
 	
@@ -32,7 +41,6 @@
 	<div class="img-container">
 	   <div class="img" id="instagram-images"></div>
 	</div>
-	
 	
 </body>
 </html>
