@@ -57,17 +57,14 @@ function execCurl($url) {
 	$curl_response = curl_exec($curl);
 	
 	$curl_errno = curl_errno($curl);
-    $curl_error = curl_error($curl);
 	
-	if (curl_error($curl) || $curl_response === false || $curl_errno > 0)
-    {
-        $info = curl_getinfo($curl);
-        echo 'error occured during curl exec - ' . var_export($info) ;
-        echo '<br> error -----------> '. $curl_error; 
-        curl_close($curl);
-    }
+	if ($curl_errno > 0 || $curl_response === false ) {
+           $info = curl_getinfo($curl);
+           echo 'error occured during curl exec - ' . var_export($info) ;
+           echo '<br> error -----------> '. curl_error($curl); 
+        }
     
-    curl_close($curl);
+        curl_close($curl);
 	return $curl_response;
 }
 
