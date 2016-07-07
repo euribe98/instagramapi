@@ -45,7 +45,7 @@ function getUserMediaNoAuth(user, count) {
 		    	//console.log(result.items);
 		    	
 		    	$.each(result.items, function(i, item) {
-		    		if (i >count)
+		    		if (i >=count)
 		    			return false;	
 		   			srcImage = item.images.thumbnail.url; 
 		   					   						   									
