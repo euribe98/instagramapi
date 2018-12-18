@@ -39,6 +39,4 @@ https://www.instagram.com/developer/endpoints/users/
 php -S localhost:8000
 2. From a browser, navigate to url: http://localhost:8000/instagramapi.html
 
-## Contributors
-Evan Uribe
 
