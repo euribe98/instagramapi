@@ -1,4 +1,4 @@
-#instagramapi
+# instagramapi
 
 ## Synopsis
 Uses Instagram api to get a user's media
